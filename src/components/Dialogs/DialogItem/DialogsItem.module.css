@@ -1,0 +1,18 @@
+.dialog a{
+    text-decoration: none;
+    color: black;
+}
+.dialog a:hover{
+	color: black;  
+	text-decoration: none;
+	
+	
+}
+.dialog a {
+	color: #000000;
+	position: relative;
+	font-weight: 600;
+	display: inline-block;
+	text-decoration: none;
+
+}

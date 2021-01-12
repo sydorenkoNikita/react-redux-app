@@ -1,0 +1,34 @@
+.profileInfo {
+    
+    
+    max-width: 500px;
+    padding: 10px;
+}
+
+
+.title {
+    color: grey;
+    font-size: 18px;
+}
+
+.descBlock {
+    padding: 10px;
+}
+
+.userPhoto img {
+    width: 200px;
+}
+
+.githubLink a {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    width: 200px;
+    font-size: 18px;
+}

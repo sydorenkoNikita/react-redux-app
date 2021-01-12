@@ -1,0 +1,23 @@
+
+
+.item img {
+    width: 40px;
+    border-radius:30px;
+}
+.cardBorder {
+    border: 1px;
+}
+.card:hover{
+    background-color: aliceblue;
+}
+.card{
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    margin: 3px;
+    width: 70%;
+}
+.cardBody {
+    flex: 1 1 auto;
+    padding: 3px 3px;
+    
+}

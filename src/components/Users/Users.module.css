@@ -1,0 +1,71 @@
+
+.userPhoto {
+    width: 300px;
+}
+
+.containerUser {
+    display: flex;
+    max-width: 1170px;
+    margin: 15px auto;
+    border: 1px solid #ccc;
+    font-family: Arial,Verdana,sans-serif;
+    background-color: rgba(0,0,0,0.01);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    
+}
+.userAva {
+    margin: 10px;
+    
+    display: inline-block;
+}
+.userInfo{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+.containerUser a{
+    text-decoration: none;
+}
+.location{
+    float: right;
+}
+
+
+.userName a{
+    display: block;
+    padding: 10px 0 15px 0;
+    color: green;
+    font-weight: 600;
+    position: relative;
+	text-decoration: none;
+}
+
+.btnBlock {
+    display: block;
+}
+
+.usersTable {
+    width: 80%;
+    margin: auto;
+}
+
+.pagination {
+    display: inline-block;
+    
+}
+
+.pagination span {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    cursor: pointer;
+}
+
+.pagination span.active {
+    background-color: gray;
+    color: white;
+}
+
+.pagination span:hover:not(.active) {background-color: #ddd;}

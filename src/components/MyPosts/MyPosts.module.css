@@ -1,0 +1,79 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:800,400);
+.item {
+    color: green;
+}
+
+.formControl{
+    display: block;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.posts {
+    margin-top: 10px;
+    width: 70%;
+    overflow: auto;
+    height: 150px;
+}
+
+.postsBlock {
+    padding: 10px;
+    border: 1px border black;
+    
+}
+
+
+.textBlock {
+    width: 200px;
+    /*visibility: hidden;*/
+    /* display: none; */
+}
+.fatwitter {
+    position: relative;
+    font-size: 12px;
+    display: inline-block;
+    padding: 0.3em 1.2em;
+    margin-top: 3px;
+    border-radius: 7px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #FFFFFF;
+    background-color: #4eb5f1;
+    text-align: center;
+    transition: all 0.2s;
+    border: none;
+}
+.fatwitter:hover{
+    background-color:#4095c6;
+}
+.visible {
+    position: relative;
+    font-size: 12px;
+    display: inline-block;
+    padding: 0.3em 1.2em;
+    margin-top: 3px;
+    border-radius: 7px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #FFFFFF;
+    background-color: rgb(114, 161, 175);
+    text-align: center;
+    transition: all 0.2s;
+    border: none;
+}
+
+.visible:hover {
+    background-color:#4095c6;
+}

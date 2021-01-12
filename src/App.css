@@ -1,38 +1,46 @@
-.App {
+body {
+  background-color: rgb(255, 255, 255);
+}
+.app-wrapper {
+  margin: 0 auto;
+  display: grid;
+  width: 1200px;
+  grid-template-areas:
+
+  "h h"
+  "n c";
+
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+  
+
+}
+
+
+  
+.header img {
+  width: 85px;
+  
+  left: 50px;
+  top:5px;
+  }
+h1 {
+  position: relative;
+  right: 310px;
+  bottom: 15px;
   text-align: center;
+  font-family: URW Chancery L, cursive;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app-wrapper-content {
+  grid-area: c;
+  /* background-color: rgb(224, 224, 224); */
+  border-left-width: 1px;
+  width: 100%;
+  background-color: rgba(255,255,255,1.00);
+  border-color: rgb(235, 238, 240);
+  border-style: solid;
+  border-right-width: 1px;
+  margin-right: 0px;
+  margin-left: 0px;
+  z-index: 1;
 }
