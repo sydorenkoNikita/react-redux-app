@@ -1,5 +1,5 @@
 
-import { addPostActionCreator, showElemActionCreator, updateNewPostActionCreator } from '../../redux/profile-reducer';
+import { addPostActionCreator, btnShowActionCreator, showElemActionCreator, updateNewPostActionCreator } from '../../redux/profile-reducer';
 
 import MyPosts from './MyPosts';
 import { connect } from 'react-redux';
@@ -10,7 +10,8 @@ const mapStateToProps = (state) => {
   return {
     posts: state.profilePage.posts,
     newPostText: state.profilePage.newPostText,
-    shouldShowElem: state.profilePage.shouldShowElem
+    shouldShowElem: state.profilePage.shouldShowElem,
+    btnShow: state.profilePage.btnShow
   }
 };
 const mapDispatchToProps = (dispatch) => {
@@ -23,7 +24,10 @@ const mapDispatchToProps = (dispatch) => {
       dispatch(addPostActionCreator())
     },
     showElem: () => {
-      dispatch( showElemActionCreator() )
+      dispatch(showElemActionCreator())
+    },
+    showBtn: () => {
+      dispatch(btnShowActionCreator())
     }
   }
 }

@@ -13,9 +13,25 @@ body {
   grid-template-rows: 60px 1fr;
   grid-template-columns: 2fr 10fr;
   
-
 }
+.themeBtn{
+  width: 200px;
+  padding-top: 12px;
+}
+.themeBtn button{
+  background-color: rgba(0, 0, 92, 0.555); /* Blue background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
 
+  box-shadow:
+      0 3px 5px rgba(0,0,0,0.25),
+      inset 0 1px 0 rgba(255,255,255,0.3),
+      inset 0 -5px 5px rgba(100,100,100,0.1),
+      inset 0 5px 5px rgba(255,255,255,0.3);
+}
+.themeBtn button:hover {
+  background-color: rgb(19, 19, 54);
+}
 
   
 .header img {

@@ -2,6 +2,7 @@ const ADD_POST = 'ADD-POST';
 const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT';
 const SET_USER_PROFILE = 'SET_USER_PROFILE';
 const SHOW_ELEM = 'SHOW_ELEM';
+const BTN_SHOW = 'BTN_SHOW'
 
 let initialState = {
     posts: [
@@ -11,7 +12,8 @@ let initialState = {
     ],
     newPostText: 'leave a post',
     profile: null,
-    shouldShowElem: false
+    shouldShowElem: false,
+    btnShow: true
 }
 const profileReducer = (state = initialState, action) => {
     switch (action.type) {
@@ -40,6 +42,11 @@ const profileReducer = (state = initialState, action) => {
                 ...state, shouldShowElem: true
             }
         }
+        case BTN_SHOW: {
+            return {
+                ...state, btnShow: false
+            }
+        }
         default:
             return state;
     }
@@ -63,6 +70,12 @@ export const showElemActionCreator = () => {
         type: SHOW_ELEM
     }
 };
+
+export const btnShowActionCreator = () => {
+    return {
+        type: BTN_SHOW
+    }
+}
 
 export const updateNewPostActionCreator = (text) => {
     return {

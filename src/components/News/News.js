@@ -1,14 +1,11 @@
-
 import React from 'react';
-
+import classes from './News.module.css';
 
 const News = () => {
     return (
-        <div>
-            Newsdsa
-            
+        <div className={classes.news}>
+           No news now...
         </div>
-        
     )
 }
 

@@ -7,7 +7,7 @@ const Header = (props) => {
 	return (
 		<header className={classes.header}>
 			<div className={classes.logo}>
-				<img src={logo} />
+				<img alt='logo' src={logo} />
 			</div>
 			<div className={classes.loginBlock}>
 				{props.isAuth ? props.login 

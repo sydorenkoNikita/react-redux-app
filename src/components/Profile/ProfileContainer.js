@@ -3,11 +3,8 @@ import React from 'react'
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import { setUserProfile } from '../../redux/profile-reducer';
-
 import Profile from './Profile'
 import classes from './Profile.module.css'
-
-
 
 class ProfileContainer extends React.Component{
 
@@ -22,7 +19,6 @@ class ProfileContainer extends React.Component{
             this.props.setUserProfile(response.data);
         });
 }
-
   render() {
     return (
     <div className={classes.content}>
